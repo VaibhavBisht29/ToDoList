@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bgimg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('clouds.jpg');
+            background-size: 100% 107%;
+            width: 100%;
+            height: 110vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(41, 4, 38);
+        }
+
+        .left-header {
+            width: 25%;
+            line-height: 80px;
+            float: left;
+        }
+
+        .left-header h1 {
+            padding-left: 70px;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            font-family: generic-name, sans-serif;
+        }
+
+        #btnone {
+            background-color: transparent;
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 150px;
+            height: 40px;
+            font-weight: 300px;
+            font-family: generic-name, sans-serif;
+            margin-top: 17px;
+            color: white;
+            margin-left: 650px;
+            border: none;
+            border-radius: 3px;
+            border: 2px solid white;
+        }
+
+        #btntwo {
+            background-color: red;
+            text-transform: uppercase;
+            font-weight: 300px;
+            width: 150px;
+            height: 40px;
+            font-family: generic-name, sans-serif;
+            margin-top: 17px;
+            font-size: 18px;
+            color: white;
+            border-radius: 3px;
+            margin-left: 4px;
+            border: none;
+        }
+
+        #btntwo:hover {
+            color: red;
+            border: 2px solid red;
+            background-color: transparent;
+        }
+
+        #btnone:hover {
+            color: red;
+            border: 2px solid red;
+            background: transparent;
+        }
+
+        .registerbox {
+            background-color: #eaf556;
+            width: 450px;
+            margin-top: 5%;
+            margin-left: 500px;
+            border-radius: 3px;
+            border: 4px solid #FF0000;
+            height: 490px;
+            opacity: 0.7;
+        }
+
+        h2 {
+            text-align: center;
+            line-height: 40px;
+            font-family: generic-name, sans-serif;
+            font-size: 22px;
+            color: white;
+            background-color: #FF0000;
+            margin-bottom: 10px;
+
+        }
+
+        .username {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        .Firstname {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        .Lastname {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        .email {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        .pass {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        #ph {
+            width: 65px;
+            padding: 7px;
+            border-radius: 3px;
+            margin-left: 80px;
+        }
+
+        .num {
+            width: 195px;
+            margin-left: 5px;
+            position: relative;
+            margin-top: 10px;
+            line-height: 30px;
+            border-radius: 3px;
+            padding-left: 22px;
+        }
+
+        #gender {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 80px;
+            line-height: 30px;
+            width: 295px;
+            border-radius: 3px;
+            padding-left: 22px;
+            height: 30px;
+        }
+
+        .check {
+            margin-top: 10px;
+            margin-left: 80px;
+            width: 15px;
+            height: 15px;
+        }
+
+        span {
+            font-size: 16px;
+            color: black;
+            margin-left: 10px;
+            font-family: generic-name, sans-serif;
+            font-weight: unset;
+
+        }
+
+        button {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 95px;
+            line-height: 30px;
+            width: 270px;
+            border-radius: 3px;
+            padding-left: 22px;
+            background-color: #FF6600;
+            font-family: generic-name, sans-serif;
+            font-weight: unset;
+            font-size: 20px;
+        }
+        button:hover {
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" bgimg">
+        <div class="header">
+            <div class="left-header">
+                <h1>TodoList</h1>
+            </div>
+            <div class="right-header">
+                <a href="login.html">
+                    <button id="btnone">Login</button></a>
+                <button id="btntwo">Register</button>
+            </div>
+            <form action="login.html">
+            <div class="registerbox">
+                <h2>Register Here</h2>
+                <input class="username" type="text" name="user" placeholder="Enter Username"><br>
+                <input class="Firstname" type="text" name="First_name" placeholder="Enter First Name"><br>
+                <input class="Lastname" type="text" name="Last_name" placeholder="Enter Last Name"><br>
+                <input class="email" type="email" name="Email" placeholder="Enter Email Address"><br>
+                <select id="ph">
+                    <option>+91</option>
+                    <option>+92</option>
+                    <option>+93</option>
+                    <option>+94</option>
+                    <option>+95</option>
+                </select>
+                <input class="num" type="text" name="Mobile_no." placeholder="Enter Mobile Number"><br>
+                <input class="pass" type="password" name="Password" placeholder="Enter Password"><br>
+                <input class="pass" type="password" name="retype-Password" placeholder="Enter Re-Type Password"><br>
+                <select id="gender">
+                    <option disabled="disabled" selected="selected">--Select Gender-- </option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select><br>
+                <input class="check" type="checkbox"><span>I Agree To The Terms Of Use</span></input><br>
+                <button>Create Account</button>
+            </form>   
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
